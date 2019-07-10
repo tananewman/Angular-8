@@ -1,0 +1,14 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a (click)="onChoose('all')" style="cursor: pointer">All</a>
+    </li>
+    <li class="nav-item">
+      <a (click)="onChoose('light')" style="cursor: pointer">All</a>
+    </li>
+    <li class="nav-item">
+      <a (click)="onChoose('dark')" style="cursor: pointer">All</a>
+    </li>    
+  </ul>
+  <app-list [characters]="getCharacters"></app-list>
+</div>
